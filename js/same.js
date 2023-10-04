@@ -4,6 +4,8 @@ function priceAdd(price) {
     const prices = parseFloat(priceAdd.innerText);
     const priceNow =price;
     priceAdd.innerText = prices + priceNow;
+    const totalPriceTag = document.getElementById('Total-price-now');
+    totalPriceTag.innerText = priceAdd.innerText;
     totalPrice = priceAdd.innerText;
     checkActivation();
     return priceAdd.innerText;
