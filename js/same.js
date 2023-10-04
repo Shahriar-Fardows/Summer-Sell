@@ -44,7 +44,7 @@ document.getElementById('Apply').addEventListener('click', function() {
     if (couponCode == "SELL20") {
       const discount = document.getElementById('Discount');
         const discountPrice = parseFloat(discount.innerText);
-        const discountNow = totalPrice * 0.2;
+        const discountNow = (totalPrice * 0.2).toFixed(2);
         discount.innerText = discountNow;   
         const totalPriceTagS = document.getElementById('Total-price-now');
         const totalPriceTag = parseFloat(totalPriceTagS.innerText);

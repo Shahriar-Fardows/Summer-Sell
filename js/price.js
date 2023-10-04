@@ -41,9 +41,11 @@ document.getElementById('Single-Relax-Chair').addEventListener('click', function
   
 });
 document.getElementById('Children-play').addEventListener('click', function() { 
+
     items('Children play');
     const price = priceAdd(299);
     return price;
+
   
 });
 document.getElementById('Flexible-Sofa').addEventListener('click', function() { 
