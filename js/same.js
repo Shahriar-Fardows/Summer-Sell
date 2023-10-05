@@ -24,12 +24,6 @@ function items(name){
     addItem.appendChild(h4);
 }
 
-function addTen(price) {
-    totalPrice = price;
-    totalPriceTag.innerText = totalPrice;
-    checkActivation();
-}
-
 // agula holo button er id gula
 
 const coupon = document.getElementById('coupon');
@@ -43,7 +37,7 @@ var totalPrice = 0;
 
 document.getElementById('Apply').addEventListener('click', function() {
     const couponCode = coupon.value;
-    if (couponCode == "SELL20") {
+    if (couponCode == "SELL200") {
       const discount = document.getElementById('Discount');
         const discountPrice = parseFloat(discount.innerText);
         const discountNow = (totalPrice * 0.2).toFixed(2);
